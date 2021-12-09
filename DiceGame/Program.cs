@@ -51,11 +51,6 @@ namespace DiceGame
             {
                 Console.WriteLine("Mängu võitis arvuti.");
             }
-               
-
-           
-                
-
         }
     }
 }
