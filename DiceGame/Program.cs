@@ -30,18 +30,26 @@ namespace DiceGame
 
                 if (cpuRandom < userRandom)
                 {
-                    Console.WriteLine("Kasutaja on mängu võitnud. Palju õnne!");
+                    Console.WriteLine("Kasutaja on voori võitnud!");
                     userScore = userScore + 1;
                 }
                 else if (cpuRandom > userRandom)
                 {
-                    Console.WriteLine("Arvuti on mängu võitnud");
+                    Console.WriteLine("Arvuti on vooru võitnud");
                     cpuScore = cpuScore + 1;
                 }
                 else
                 {
                     Console.WriteLine("Viik!");
                 }
+            } 
+            if(cpuScore < userScore)
+            {
+                Console.WriteLine("Kasutaja on mängu võitnud. Palju õnne!");
+            }
+            else
+            {
+                Console.WriteLine("Mängu võitis arvuti.");
             }
                
 
